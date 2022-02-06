@@ -1,0 +1,23 @@
+body {
+    color: #ffffff;
+    background: #87CEEB;
+    border: 5px solid #48cd31;
+}
+li {
+    display: inline;
+}
+li:not(:first-child):before {
+    content: " | ";
+    color: #808282;
+}
+h1 {
+    font-family: 'Merriweather', serif;
+    
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+p {
+
+}
