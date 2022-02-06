@@ -1,7 +1,15 @@
+* {
+    box-sizing: border-box;
+}
 body {
+    /* display: flex; */
     color: #ffffff;
     background: #87CEEB;
-    border: 5px solid #48cd31;
+    border: 8px solid #48cd31;
+}
+ul {
+    text-align: center;
+    font-size: 30px;
 }
 li {
     display: inline;
@@ -12,12 +20,24 @@ li:not(:first-child):before {
 }
 h1 {
     font-family: 'Merriweather', serif;
-    
+    text-align: center;
+    font-size: 60px;
 }
 
 h2 {
     font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    margin-left: 50px;
 }
-p {
+img {
+    width: 250px;
+    display: inline-block;
+    margin:4px 4px 10px 10px;
+}
 
+p {
+    border: hidden 20px #000;
+    width: auto;
+    font-size: 25px;
+    margin-left: 50px;
 }
