@@ -106,7 +106,7 @@ section {
   Custom styles
   ========================================
 */
-header {
+/* header {
   background: #2db34a;
   top: 0;
   left: 0;
@@ -119,7 +119,7 @@ footer {
     left: 0;
     position: fixed;
     right: 0;
-  }
+  } */
 
 /*
   ========================================
@@ -128,36 +128,47 @@ footer {
 */
 
 .row,
-.row-alt{
+.row-alt {
   min-width: 960px;
 }
+
 .row {
   background: #fff;
-  padding: 66px 0 44px 0;
+  padding: 0px 0 0px 0;
 }
+
 .row-alt {
-   background: #cbe2c1;
-   background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
-   background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
-   background: linear-gradient(to right, #a1d3b0, #f6f1d3);
-   padding: 44px 0 22px 0;
- }
-  
+  background: #cbe2c1;
+  background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+  padding: 0px 0 0px 0;
+}
+
 /*
 =================
 Column-Width Classes
 =================
 */
+.col-1-1 {
+  width: 100%;
+  padding-bottom: 25px;
+}
+
 .col-1-3 {
   width: 33.33%;
+  padding-bottom: 50px;
 }
 
 .col-1-2 {
   width: 50%;
+  padding-bottom: 100px;
 }
 
 .col-1-3,
 .col-1-2 {
+  border: 1px;
+  border-style: solid;
   display: inline-block;
   vertical-align: top;
 }
@@ -165,8 +176,8 @@ Column-Width Classes
 .grid,
 .col-1-3,
 .col-1-2 {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 /*
@@ -186,11 +197,22 @@ Column-Width Classes
 .container,
 .grid {
   margin: 0 auto;
-  width: 960px;
+  width: 100%;
+
 }
 
-.container {
-  padding-left: 30px;
-  padding-right: 30px;
+.top {
+  margin-top: 50px;
+}
 
+.second {
+  padding-top: 0px;
+}
+
+.third {
+  margin-top: 0px;
+}
+
+.bottom {
+  margin-top: 0px;
 }
