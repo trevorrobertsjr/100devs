@@ -1,0 +1,33 @@
+h1 {
+    font-size: 30px;
+    padding-left: 30px;
+    border-style:solid;
+    border-color: red;
+    border-width: 1px;
+}
+
+h2 {
+    font-size: 25px;
+    padding: 50px 0;
+    border-style:solid;
+    border-color: gold;
+    border-width: 20px;
+    margin: 10px 0;
+}
+
+span {
+    color: blue;
+    border-style:solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 5px;
+}
+
+section {
+    width: 25%;
+    height: 200px;
+    border-style:solid;
+    border-color: purple;
+    border-width: 2px;
+    margin: 0 auto;
+}
