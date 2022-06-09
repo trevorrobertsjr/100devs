@@ -1,0 +1,119 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* Please make the someText 12px, moreText 16px, and lastText 27px */
+/* .someText {
+  font-size: 12px;
+}
+
+.moreText {
+  font-size: 16px;
+}
+
+.lastText {
+  font-size: 27px;
+} */
+
+/* Please double the font-size of someText, moreText, and lastText (still using px) */
+
+/* .someText {
+  font-size: 24px;
+}
+
+.moreText {
+  font-size: 32px;
+}
+
+.lastText {
+  font-size: 54px;
+} */
+
+/* Please set a base font-size on heyo, and make someText 12px, moreText 16px, and lastText 27px BUT use ems instead of px */
+/* .heyo {
+  font-size: 4px;
+}
+*/
+/* .someText {
+  font-size: 3em;
+}
+
+.moreText {
+  font-size: 4em;
+}
+
+.lastText {
+  font-size: 6.75rem;
+}  */
+
+/* Please double the size of someText, moreText, and lastText using ems, but only make one change */
+/* .heyo {
+  font-size: 8px;
+}
+
+.utOh {
+  font-size: 16px;
+}
+
+html {
+  font-size: 8px;
+} */
+
+/* Please wrap lastText in a new section with the class of utOh and give it a base font size of 40px */
+
+
+/* Please fix your doubling of lastText, buy converting to rems */
+/* Leon recommends working with a base font-size of 10 px for simpler math*/
+/* font-size of 62.5% on html element = 10 px */
+
+.someText {
+  font-size: 1.2em;
+}
+
+.moreText {
+  font-size: 1.6em;
+}
+
+.lastText {
+  font-size: 2.7rem;
+} 
+
+/* Please double the size of someText, moreText, and lastText using ems, but only make one change */
+.heyo {
+  font-size: 10px;
+}
+
+.utOh {
+  font-size: 20px;
+}
+
+html {
+  font-size: 62.5%;
+}
