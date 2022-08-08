@@ -3,20 +3,14 @@
 /*******************************************/
 
 /* Box Model Hack */
-* {
+*{
   box-sizing: border-box;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-img {
-  display: block;
-  margin: 0 auto;
-  width: 40%;
-}
-
-iframe {
+img{
   display: block;
   margin: 0 auto;
 }
