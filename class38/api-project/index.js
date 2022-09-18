@@ -1,25 +1,27 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 const PORT = 8000;
-const DEFAULTRAPPER = 'Dylan'
+const DEFAULTRAPPER = 'dylan'
 
 const rappers = {
-    '21 Savage': {
+    '21 savage': {
         'age': 29,
         'birthName': 'Sheyaa',
         'birthLocation': 'London, England'
     },
-    'Chance the Rapper': {
+    'chance the rapper': {
         'age': 29,
         'birthName': 'Chancelor Bennett',
         'birthLocation': 'Chicago, Illinois'
     },
-    'Dylan': {
+    'dylan': {
         'age': 29,
         'birthName': 'Dylan',
         'birthLocation': 'Dylan, Dylan'
     }
 }
+app.use('/static', express.static(path.join(__dirname, 'www')));
 
 app.get('/', (request, response) => {
     response.sendFile(__dirname + '/www/index.html');
@@ -28,8 +30,9 @@ app.get('/', (request, response) => {
 
 // url format: /api/Chance the Rapper
 app.get('/api/:rapperName', (request, response) => {
-    if (rappers[request.params.rapperName]) {
-        response.json(rappers[request.params.rapperName]);
+    const rapper = request.params.rapperName.toLowerCase();
+    if (rappers[rapper]) {
+        response.json(rappers[rapper]);
     }
     else {
         response.json(rappers[DEFAULTRAPPER]);
